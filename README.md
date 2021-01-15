@@ -1,2 +1,3 @@
 # hello-world
-My first project
+My first project.
+This is a project showcasing the lagecy of Hello-World.
