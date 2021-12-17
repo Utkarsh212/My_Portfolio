@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactform.css">
+</head>
+<body>
+    <div class="box">
+        <form actions="">
+                <div class="heading">
+                <h1 class="main_heading">Contact Information</h1>
+            <p>Let us know your questions, suggestions and concerns by filling-up the form below</p>
+            </div>
+            <p>Your Name: *<input type="text" name="fname" required placeholder="First Name"><input type="text" name="lname" required placeholder="Last Name"></p>
+            <fieldset>
+                <legend>Gender: *</legend>
+                <p>
+                    Male<input type="radio" name="gender" required>
+                    Female<input type="radio" name="gender" required>
+                    Other<input type="radio" name="gender" required>
+                </p>
+            </fieldset>
+            <p>Email: *<input type="email" name="email" placeholder="myname@gmail.com" required></p>
+            <p>Phone: *<input type="number" name="phno" placeholder="1234567890" required></p>
+            <p>Message:<textarea cols="100" rows="1" name="msg" placeholder="Write your message"></textarea></p>
+            <div class="button">
+                <p><input type="submit" value="Submit"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --main-white: #f0f0f0;
+            --main-red: #be3144;
+            --main-blue: #45567d;
+            --main-gray: #303841;
+        }
+
+        body {
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            color: white;
+        }
+
+        #navbar {
+            background: var(--main-red);
+            width: 100%;
+            height: 4rem;
+            position: fixed;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        #menu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        .navlink {
+            margin-right: 2rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        #welcome-section {
+            width: 100%;
+            height: 100vh;
+            background: black;
+            background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #wc-container {
+            text-align: center;
+        }
+
+        #wc-title {
+            font-size: 4em;
+        }
+
+        #wc-para {
+            font-size: 2rem;
+            color: var(--main-red);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        #projects {
+            /*width: 100%;*/
+            background: var(--main-blue);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #projects-title {
+            font-size: 3rem;
+        }
+
+        .image {
+            width: 100%;
+            display: box;
+        }
+
+        #projects-container {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .subcontainer {
+            background: var(--main-gray);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+        }
+
+        .image-title {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        span.code {
+            color: var(--main-gray);
+        }
+
+        .image-title {
+            color: white;
+        }
+
+        .subcontainer:hover .code {
+            color: #ff7f50;
+        }
+
+        #container-button {
+            margin-top: 2rem;
+        }
+
+        #button {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            background: var(--main-gray);
+            color: white;
+            border: none;
+        }
+
+        #button:hover {
+            background: var(--main-red);
+        }
+
+        #button:hover>i {
+            margin-left: 10px;
+            transform: translateX(2px);
+            transition: transform 0.3s ease-out;
+        }
+
+        #contacts {
+            text-align: center;
+            /*width: 100%;*/
+            background: var(--main-gray);
+            padding: 4rem;
+            border-bottom: 0.5em solid var(--main-red);
+        }
+
+        #contacts-heading {
+            font-size: 3rem;
+        }
+
+        #contacts-discrep {
+            color: white;
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        #contacts-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contacts-link {
+            margin-right: 2rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        #footer {
+            background: var(--main-gray);
+            height: 3rem;
+            text-align: center;
+            padding-top: 1.8rem;
+        }
+
+        #footer-para {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            h1,
+            h2,
+            p {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    </link>
+    <nav id="navbar">
+        <ul id="menu">
+            <a class="navlink" id="link1" href="#">
+                <li class="list-item" id="listitem1">About</li>
+            </a>
+            <a class="navlink" id="link2" href="#projects">
+                <li class="list-item" id="listitem2">Work</li>
+            </a>
+            <a class="navlink" id="link3" href="contact_form.html">
+                <li class="list-item" id="listitem3">Contact</li>
+            </a>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <div id="wc-container">
+            <h1 id="wc-title">Hey I am UHpi</h1>
+            <p id="wc-para">a web developer</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 id="projects-title"><u>These Are My Projects</u></h1>
+        <div id="projects-container">
+            <a class="subcontainer" id="box1" href="https://codepen.io/UHpi/pen/poPbyvG"><img class="image"
+                    src="Screenshot 2021-12-17 161634.png">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a class="subcontainer" id="box2" href="https://codepen.io/UHpi/pen/vYmejeK"><img class="image"
+                    src="Screenshot 2021-12-17 161704.png">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Technical Documentation
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a class="subcontainer" id="box3" href="https://codepen.io/UHpi/pen/eYWeNzO"><img class="image"
+                    src="Screenshot 2021-12-17 161752.png">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Personal Portfolio
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a class="subcontainer" id="box4" href="https://codepen.io/UHpi/pen/ZEKOqJg"><img class="image"
+                    src="Screenshot 2021-12-17 161720.png">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Survey Form
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a class="subcontainer" id="box5" href="https://codepen.io/UHpi/pen/xxdLNoY"><img class="image"
+                    src="Screenshot 2021-12-17 163328.png">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Product Landing Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a class="subcontainer" id="box6" href="https://codepen.io/UHpi/pen/abLWwPN"><img class="image"
+                    src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/evolving_google_identity_2x1.jpg">
+                <p class="image-title"><span class="code">&lt;</span>
+                    Google Home Page Clone
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+        <div id="container-button"><a id="button-link" href="#"><button id="button" type="submit">Show More<i
+                        class="fas fa-chevron-right"></i></button></a></div>
+    </section>
+    <section id="contacts">
+        <h1 id="contacts-heading">Let's Work Together...</h1>
+        <p id="contacts-discrep">How do you take your coffee?</p>
+        <div id="contacts-container">
+            <a class="contacts-link" href="https://www.facebook.com/utkarsh.pancholi.12/">
+                <p class="link-para"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    Facebook</p>
+            </a>
+            <a class="contacts-link" href="https://github.com/Utkarsh212">
+                <p class="link-para"><i class="fa fa-github" aria-hidden="true"></i>
+                    GitHub</p>
+            </a>
+            <a class="contacts-link" href="#">
+                <p class="link-para"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    Twitter</p>
+            </a>
+            <a class="contacts-link" href="#">
+                <p class="link-para"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    Send a Mail</p>
+            </a>
+            <a class="contacts-link" href="#">
+                <p class="link-para"><i class="fa fa-mobile" aria-hidden="true"></i>
+                    Call Me</p>
+            </a>
+        </div>
+    </section>
+    <footer id="footer">
+        <p id="footer-para">&copy; Created by UHpi
+        <p>
+    </footer>
+</body>
+
+</html>
